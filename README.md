@@ -436,9 +436,3 @@ app.get('/api/houses/:id', (request, response, next) => {
 - 🍍
 
 **[⬆ back to top](#table-of-contents)**
-
-# FAQs
-
-protocola http
-porque express en lugar de nextjs
-middleware
