@@ -89,7 +89,8 @@ console.log(`Server running on port ${PORT}`);
 
 Si ejecutamos nuevamente el comando _npm run start_ debería aparecer por pantalla el mensaje _Server running on port 3001_ y _Hello World en el navegador_:
 
-> [!NOTE] > **Node.js usa los llamados módulos CommonJS**: La razón de esto es que el ecosistema de Node necesitaba módulos mucho antes de que JavaScript los admitiera en la especificación del lenguaje. Node ahora es compatible con los módulos ES6, pero ya que la compatibilidad aún no es del todo perfecta continuaremos con módulos CommonJS.
+> [!NOTE]
+> **Node.js usa los llamados módulos CommonJS**: La razón de esto es que el ecosistema de Node necesitaba módulos mucho antes de que JavaScript los admitiera en la especificación del lenguaje. Node ahora es compatible con los módulos ES6, pero ya que la compatibilidad aún no es del todo perfecta continuaremos con módulos CommonJS.
 
 Pero nosotros queremos devolver una lista de elementos, por lo que debemos incluirla en el fichero:
 
