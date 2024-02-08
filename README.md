@@ -89,8 +89,7 @@ console.log(`Server running on port ${PORT}`);
 
 Si ejecutamos nuevamente el comando _npm run start_ debería aparecer por pantalla el mensaje _Server running on port 3001_ y _Hello World en el navegador_:
 
-> [!NOTE]
-> **Node.js usa los llamados módulos CommonJS**: La razón de esto es que el ecosistema de Node necesitaba módulos mucho antes de que JavaScript los admitiera en la especificación del lenguaje. Node ahora es compatible con los módulos ES6, pero ya que la compatibilidad aún no es del todo perfecta continuaremos con módulos CommonJS.
+> [!NOTE] > **Node.js usa los llamados módulos CommonJS**: La razón de esto es que el ecosistema de Node necesitaba módulos mucho antes de que JavaScript los admitiera en la especificación del lenguaje. Node ahora es compatible con los módulos ES6, pero ya que la compatibilidad aún no es del todo perfecta continuaremos con módulos CommonJS.
 
 Pero nosotros queremos devolver una lista de elementos, por lo que debemos incluirla en el fichero:
 
@@ -243,7 +242,7 @@ app.get('/api/houses/:id', (request, response) => {
 
 El código de estado HTTP que se devuelve es 200, lo que significa que la respuesta se realizó correctamente. No se devuelven datos con la respuesta, ya que el valor de la cabecera de content-length es 0, y lo mismo se puede verificar desde el navegador.
 
-La situación debe manejarse en el servidor de una mejor manera. Si no se encuentra ninguna nota, el servidor debe responder con el código de estado 404 not found en lugar de 200.
+La situación debe manejarse en el servidor de una mejor manera. Si no se encuentra ninguna casa, el servidor debe responder con el código de estado 404 not found en lugar de 200.
 
 Además, podemos mejorar el error 404 sobreescribiendo el mensaje predeterminado de NO ENCONTRADO.
 
